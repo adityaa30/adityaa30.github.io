@@ -1,9 +1,12 @@
-* {
-  font-family: 'Fira Code';
-}
-
 body {
-  margin: 0;
+  font-family: "Fira Code";
+  color: whitesmoke;
+  background-color: #1c2833;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-family: "Fira Code", "Courier New", Courier, monospace;
+  color: white;
 }

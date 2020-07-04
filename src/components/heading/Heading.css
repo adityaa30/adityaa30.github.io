@@ -1,0 +1,13 @@
+h1 {
+  color: #aed6f1;
+  font-weight: bolder;
+  font-size: 2.4rem;
+  text-decoration: underline;
+}
+
+/* Portable devices (mobile, tablet, 992px and below) */
+@media (max-width: 992px) {
+  h1 {
+    text-align: center;
+  }
+}
