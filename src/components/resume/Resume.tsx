@@ -1,5 +1,5 @@
 import React from "react";
-import ResumeFile from "../../assets/Aditya-Kumar-Resume.pdf";
+import ResumeFile from "../../assets/Resume.pdf";
 
 export default function Resume() {
   return (
