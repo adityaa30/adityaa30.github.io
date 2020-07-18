@@ -1,8 +1,13 @@
 .project-container {
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
   padding: 0.5rem;
   margin: 1rem 0;
+  transition: border-style 0.1s ease-in-out;
+}
+
+.project-container:hover {
+  border-style: dashed;
 }
 
 .project-title {
@@ -31,9 +36,10 @@
 }
 
 .project-header > a {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+  transition: 0.15s ease-in-out;
 }
 
-.project-details {
-  margin-top: 2rem;
+.project-header > a:hover {
+  transform: scale(1.2);
 }

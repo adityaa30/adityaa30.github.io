@@ -1,0 +1,15 @@
+.chip {
+  display: inline-block;
+  padding: 0.1rem 0.2rem;
+  margin: 0.2rem 0.3rem 0.2rem 0;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.chip:hover {
+  background-color: rgb(23, 32, 42);
+}
