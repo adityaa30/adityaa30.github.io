@@ -1,11 +1,11 @@
-.image-container {
-  display: flex;
-}
+ .image-container {
+     display: flex;
+ }
 
-.image-container > img {
-  height: 250px;
-  border-radius: 8px;
-  margin: 1rem auto;
-  text-align: center;
-  object-fit: cover;
-}
+ .image-container>img {
+     height: 250px;
+     border-radius: 8px;
+     margin: 1rem auto;
+     text-align: center;
+     object-fit: cover;
+ }

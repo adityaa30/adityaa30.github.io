@@ -1,0 +1,39 @@
+.project-container {
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.project-subtitle {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.project-duration {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.project-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.project-header > a {
+  margin-left: 1rem;
+}
+
+.project-details {
+  margin-top: 2rem;
+}
