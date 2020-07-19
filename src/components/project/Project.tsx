@@ -25,14 +25,14 @@ export default function Project(props: ProjectProps) {
 
   return (
     <div
-      style={{ borderColor: theme.light }}
+      style={{ borderColor: theme.primaryDark }}
       className={"project-container"}
       onMouseEnter={() => setShowDetails(true)}
       onMouseLeave={() => setShowDetails(false)}
       onClick={() => setShowDetails(!showDetails)}
     >
       <div className={"project-header"}>
-        <div className={"project-title"} style={{ color: theme.light }}>
+        <div className={"project-title"} style={{ color: theme.primaryDark }}>
           {props.title}
         </div>
         {props.repositoryLink && (
@@ -52,7 +52,7 @@ export default function Project(props: ProjectProps) {
         )}
       </div>
       {props.subtitle && (
-        <div className={"project-subtitle"} style={{ color: theme.lightest }}>
+        <div className={"project-subtitle"} style={{ color: theme.primary }}>
           {props.subtitle}
         </div>
       )}
@@ -64,7 +64,7 @@ export default function Project(props: ProjectProps) {
         </div>
       )}
       {props.duration && (
-        <div className={"project-duration"} style={{ color: theme.lightest }}>
+        <div className={"project-duration"} style={{ color: theme.primary }}>
           <span role="img" aria-label={"Calendar"}>
             📆
           </span>{" "}

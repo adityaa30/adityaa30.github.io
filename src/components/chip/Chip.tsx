@@ -10,7 +10,7 @@ interface ChipProps {
 export default function Chip(props: ChipProps) {
   const theme = useContext(ThemeContext);
   return (
-    <div style={{ borderColor: theme.light }} className={"chip"}>
+    <div style={{ borderColor: theme.primaryDark }} className={"chip"}>
       {props.value}
     </div>
   );

@@ -5,9 +5,11 @@ import App from "./components/app/App";
 import * as serviceWorker from "./serviceWorker";
 import { ThemeContext, themes } from "./context/ThemeContext";
 
+const theme = themes[new Date().getHours() % themes.length];
+
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeContext.Provider value={themes.blue}>
+    <ThemeContext.Provider value={theme}>
       <App />
     </ThemeContext.Provider>
   </React.StrictMode>,

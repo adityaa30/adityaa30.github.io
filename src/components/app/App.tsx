@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
 
 import Header from "../header/Header";
@@ -10,11 +10,16 @@ import Resume from "../resume/Resume";
 
 import "@fortawesome/fontawesome-free/css/all.css";
 import "./App.css";
+import { ThemeContext } from "../../context/ThemeContext";
 
 export default function App() {
+  const theme = useContext(ThemeContext);
+  document.body.style.color = theme.textColor;
+  document.body.style.backgroundColor = theme.accent;
+
   return (
-    <div className={"app-container"}>
-      <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
+      <div className={"app-container"}>
         <Header />
         <Switch>
           <Route
@@ -31,7 +36,7 @@ export default function App() {
           <Route path={"/"} component={About} />
         </Switch>
         <Footer />
-      </HashRouter>
-    </div>
+      </div>
+    </HashRouter>
   );
 }
