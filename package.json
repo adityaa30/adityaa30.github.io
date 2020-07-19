@@ -25,9 +25,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint:tsx": "prettier --config='.prettierrc' --write '**/*.tsx'",
-    "lint:css": "prettier --config='.prettierrc' --write 'src/**/*.css'",
-    "lint": "npm run lint:tsx && npm run lint:css",
+    "lint:cli": "prettier --config='.prettierrc' --write",
+    "lint:tsx": "npm run lint:cli '**/*.tsx'",
+    "lint:ts": "npm run lint:cli 'src/**/*.ts'",
+    "lint:css": "npm run lint:cli 'src/**/*.css'",
+    "lint": "npm run lint:tsx && npm run lint:ts && npm run lint:css",
     "predeploy": "npm run lint && npm run build",
     "deploy": "gh-pages --dist build --branch master --message 'Publish react-app'"
     },

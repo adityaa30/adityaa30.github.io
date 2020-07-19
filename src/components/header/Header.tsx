@@ -10,6 +10,7 @@ export default function Header() {
       <div className={"menu-links"}>
         <Link to="/">Home</Link>
         <Link to="/projects">Projects</Link>
+        <Link to="/experience">Experience</Link>
         <Link to="/resume">Resume</Link>
       </div>
       <div className={"icon-links"}>

@@ -56,10 +56,13 @@ export default function Project(props: ProjectProps) {
           {props.subtitle}
         </div>
       )}
-      {props.techStack &&
-        props.techStack.map((value, idx) => {
-          return <Chip key={idx} value={value} />;
-        })}
+      {props.techStack && (
+        <div className={"project-techstack"}>
+          {props.techStack.map((value) => {
+            return <Chip key={value} value={value} />;
+          })}
+        </div>
+      )}
       {props.duration && (
         <div className={"project-duration"} style={{ color: theme.lightest }}>
           <span role="img" aria-label={"Calendar"}>
