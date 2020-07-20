@@ -1,5 +1,4 @@
-import React, { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
+import React from "react";
 
 import "./Heading.css";
 
@@ -8,6 +7,5 @@ interface HeadingProps {
 }
 
 export default function Heading(props: HeadingProps) {
-  const theme = useContext(ThemeContext);
-  return <h1 style={{ color: theme.primary }}>{props.heading}</h1>;
+  return <h1>{props.heading}</h1>;
 }

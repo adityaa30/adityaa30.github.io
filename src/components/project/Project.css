@@ -2,6 +2,7 @@
   border-width: 2px;
   border-style: solid;
   padding: 0.5rem;
+  border-color: var(--color-primary-dark);
   margin: 1rem 0;
   transition: border-style 0.1s ease-in-out;
 }
@@ -12,6 +13,8 @@
 
 .project-title {
   margin: 0;
+  color: var(--color-primary-dark);
+
   font-size: 1.8rem;
   font-weight: bold;
 }
@@ -20,6 +23,7 @@
   margin: 0;
   font-size: 1rem;
   font-weight: lighter;
+  color: var(--color-primary);
 }
 
 .project-techstack {
@@ -30,6 +34,7 @@
   margin: 0;
   font-size: 1rem;
   font-weight: normal;
+  color: var(--color-primary);
 }
 
 .project-header {

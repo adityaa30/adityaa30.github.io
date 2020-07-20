@@ -7,9 +7,11 @@
   border-radius: 4px;
   font-size: 0.9rem;
   font-weight: bold;
-  transition: background-color 0.2s ease-in-out;
+  border-color: var(--color-primary-dark);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .chip:hover {
-  background-color: rgb(23, 32, 42);
+  color: var(--color-accent);
+  background-color: var(--color-primary-dark);
 }

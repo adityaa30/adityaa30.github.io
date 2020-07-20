@@ -1,8 +1,7 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import Chip from "../chip/Chip";
 import Markdown from "../markdown/Markdown";
 import useMarkdownUrl from "../../hooks/useMarkdown";
-import { ThemeContext } from "../../context/ThemeContext";
 
 import "./Project.css";
 
@@ -21,20 +20,16 @@ export interface ProjectProps {
 export default function Project(props: ProjectProps) {
   const [showDetails, setShowDetails] = useState(false);
   const readme = useMarkdownUrl(props.readme);
-  const theme = useContext(ThemeContext);
 
   return (
     <div
-      style={{ borderColor: theme.primaryDark }}
       className={"project-container"}
       onMouseEnter={() => setShowDetails(true)}
       onMouseLeave={() => setShowDetails(false)}
       onClick={() => setShowDetails(!showDetails)}
     >
       <div className={"project-header"}>
-        <div className={"project-title"} style={{ color: theme.primaryDark }}>
-          {props.title}
-        </div>
+        <div className={"project-title"}>{props.title}</div>
         {props.repositoryLink && (
           <a href={props.repositoryLink} target="_blank" rel="noopener noreferrer">
             <i className={"fab fa-github fa-lg"}></i>
@@ -51,11 +46,7 @@ export default function Project(props: ProjectProps) {
           </a>
         )}
       </div>
-      {props.subtitle && (
-        <div className={"project-subtitle"} style={{ color: theme.primary }}>
-          {props.subtitle}
-        </div>
-      )}
+      {props.subtitle && <div className={"project-subtitle"}>{props.subtitle}</div>}
       {props.techStack && (
         <div className={"project-techstack"}>
           {props.techStack.map((value) => {
@@ -64,7 +55,7 @@ export default function Project(props: ProjectProps) {
         </div>
       )}
       {props.duration && (
-        <div className={"project-duration"} style={{ color: theme.primary }}>
+        <div className={"project-duration"}>
           <span role="img" aria-label={"Calendar"}>
             📆
           </span>{" "}

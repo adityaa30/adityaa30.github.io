@@ -3,15 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./components/app/App";
 import * as serviceWorker from "./serviceWorker";
-import { ThemeContext, themes } from "./context/ThemeContext";
+import { applyTheme, THEMES } from "./context/ThemeContext";
 
-const theme = themes[new Date().getHours() % themes.length];
+const theme = new Date().getHours() % Object.keys(THEMES).length;
+applyTheme(theme);
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeContext.Provider value={theme}>
-      <App />
-    </ThemeContext.Provider>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

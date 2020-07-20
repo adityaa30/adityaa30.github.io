@@ -1,3 +1,41 @@
-.footer {
+.footer-container {
   text-align: center;
+  margin-bottom: 1.2rem;
+}
+.footer {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: auto;
+}
+
+.footer:hover {
+  font-weight: bolder;
+}
+
+.floating {
+  animation-name: floating;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  from {
+    box-shadow: 0 2px 30px 0px rgba(0, 0, 0, 0.4);
+    transform: translate(0, 0px);
+  }
+
+  65% {
+    box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.2);
+    transform: translate(0, 6px);
+  }
+
+  to {
+    box-shadow: 0 2px 30px 0px rgba(0, 0, 0, 0.4);
+    transform: translate(0, -0px);
+  }
 }

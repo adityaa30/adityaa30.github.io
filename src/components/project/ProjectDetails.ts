@@ -14,7 +14,7 @@ the lookup in ES Index when input is not a valid contact name
 `
   },
   {
-    title: "Indian Institute of Technology, Delhi:",
+    title: "Indian Institute of Technology, Delhi",
     subtitle: "Summer Research Intern | GIPEDI",
     techStack: ["python", "Java", "Java Swing", "AndroidX", "TensorFlow", "Firebase ML Kit", "ReactJS"],
     duration: "May 2019 - July 2019",
@@ -64,7 +64,7 @@ Tools
     details: `
 - Worked on the android app for the project **Real-Time Water Quality Sensor**
 - Synchronized the app with the provided Water API to **display real time sensor**
-data analysis in tables and graphs**
+data analysis in **tables and graphs**
 - Develop an **offline BLE scanner** feature to **fetch data from a nearby sensor in real time**
 - Revamp the existing database architecture using **Room Persistence Library** to save water data
 collected from the sensor
