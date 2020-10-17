@@ -24,9 +24,9 @@ export default function Project(props: ProjectProps) {
   return (
     <div
       className={"project-container"}
-      onMouseEnter={() => setShowDetails(true)}
-      onMouseLeave={() => setShowDetails(false)}
-      onClick={() => setShowDetails(!showDetails)}
+      // onMouseEnter={() => setShowDetails(true)}
+      // onMouseLeave={() => setShowDetails(false)}
+      // onClick={() => setShowDetails(!showDetails)}
     >
       <div className={"project-header"}>
         <div className={"project-title"}>{props.title}</div>
@@ -49,6 +49,9 @@ export default function Project(props: ProjectProps) {
       {props.subtitle && <div className={"project-subtitle"}>{props.subtitle}</div>}
       {props.techStack && (
         <div className={"project-techstack"}>
+          <span role="img" aria-label={"Bookmark"}>
+            🔖
+          </span>{" "}
           {props.techStack.map((value) => {
             return <Chip key={value} value={value} />;
           })}

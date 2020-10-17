@@ -5,7 +5,8 @@ const EmbedStyle = {
   position: "absolute",
   height: "100%",
   top: 0,
-  left: 0
+  left: 0,
+  zIndex: 100
 } as React.CSSProperties;
 
 export default function Resume() {

@@ -9,42 +9,71 @@
 \LoadClass{article}
 
 % Package Imports
-\usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry}
-\usepackage[hidelinks]{hyperref}
+\usepackage[hmargin=0.70cm, vmargin=0.35cm]{geometry}
 
 % Publications
 \usepackage{cite}
 \renewcommand\refname{\vskip -1.5cm}
 
 % Color definitions
-\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[usenames,dvipsnames]{xcolor} 
 \definecolor{blue}{RGB}{41, 128, 185}
+\definecolor{darkgreen}{RGB}{19, 141, 117}
+\definecolor{darkblue}{RGB}{33, 97, 140}
 \definecolor{date}{HTML}{666666}
-\definecolor{primary}{HTML}{2b2b2b}
+\definecolor{primary}{HTML}{010000} 
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 
 % Set main fonts
 \usepackage{fontspec}
-\setmainfont[Color=primary, Path = fonts/lato/,BoldItalicFont=Lato-RegIta,BoldFont=Lato-Reg,ItalicFont=Lato-LigIta]{Lato-Lig}
-\setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
+\setmainfont[
+    Color=primary,
+    Path=fonts/lato/,
+    BoldItalicFont=Lato-RegIta,
+    BoldFont=Lato-Reg,
+    ItalicFont=Lato-LigIta
+]{Lato-Lig}
+
+\setsansfont[
+    Scale=MatchLowercase,
+    Mapping=tex-text, 
+    Path=fonts/raleway/
+]{Raleway-ExtraLight}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,      
+    urlcolor=darkblue,
+    bookmarks=true,
+}
+\urlstyle{same}
+\def\Hy@href#{%
+  \addfontfeatures{Color=darkblue}\hyper@normalise\href@
+}
 
 % Date command
 \usepackage[absolute]{textpos}
 \usepackage[UKenglish]{isodate}
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
-\newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
-\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont
-Last Updated on \today
-\end{textblock}}
+\newcommand{\lastupdated}{
+    \begin{textblock}{60}(155,5)
+    \color{date}
+    \fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}
+    \fontsize{8pt}{10pt}
+    \selectfont Last Updated on \today
+    \end{textblock}
+}
 
 % Name command
 \newcommand{\namesection}[3]{
 \centering{
-\color{blue}
+\color{black}
 \fontsize{40pt}{60pt}
-\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1
+\fontspec[Path = fonts/lato/]{Lato-Hai}\selectfont #1 
 \fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
 } \\[5pt]
 \centering{
@@ -54,11 +83,11 @@ Last Updated on \today
 \vspace{-15pt}
 }
 
-% Section seperators
+% Section seperators 
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{0pt}{0pt}
+\titlespacing{\section}{0pt}{0pt}{0pt} 
 \titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{8pt}}
+\newcommand{\sectionsep}{\vspace{5pt}}
 
 % Headings command
 \titleformat{\section}{\color{headings}

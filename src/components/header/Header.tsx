@@ -15,7 +15,7 @@ export default function Header() {
       </div>
       <div className={"icon-links"}>
         <a href={ResumeFile} download="Aditya Kumar Resume.pdf">
-          <i className={"fas fa-file-download fa-lg"}></i>
+          <i className={"fas fa-file-pdf fa-lg"}></i>
         </a>
         <a href="https://www.linkedin.com/in/adityaa30" target="_blank" rel="noopener noreferrer">
           <i className={"fab fa-linkedin fa-lg"}></i>

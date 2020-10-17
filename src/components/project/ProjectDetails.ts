@@ -2,6 +2,20 @@ import { ProjectProps } from "./Project";
 
 export const experience = [
   {
+    title: "Google Summer of Code 2020",
+    subtitle: "Student Developer | Scrapy | Python Software Foundation",
+    techStack: ["python", "Twisted", "hyper-h2"],
+    duration: "June 2020 - August 2020",
+    details: `
+- [**https://medium.com/@adityaa30/http-2-client-for-scrapy-79ad5a1a8c7e**](https://medium.com/@adityaa30/http-2-client-for-scrapy-79ad5a1a8c7e)
+- Implemented HTTP/2 support to [**Scrapy**](https://github.com/scrapy/scrapy) adding an
+**H2DownloadHandler** that connects to **HTTP/2** via **ALPN or NPN** where possible, and
+take advantage of the **compression and efficient gains**
+- **Built custom H2ClientProtocol** using [**Twisted**](https://twistedmatrix.com/trac/)
+**capable of multiplexing multiple requests in one connection**
+`
+  },
+  {
     title: "Amazon",
     subtitle: "Software Developement Engineer Intern | Alexa Communications | Chennai",
     techStack: ["python", "Java", "TensorFlow", "Dagger", "Stanford CoreNLP"],

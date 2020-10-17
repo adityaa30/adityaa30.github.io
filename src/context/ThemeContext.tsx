@@ -21,20 +21,20 @@ const themes = [
     "--color-primary": "#2bbc8a",
     "--color-primary-dark": "#117A65",
     "--color-text": "#f5f5f5"
-  },
-  {
+  }
+  /* {
     // Light Blue
     "--color-accent": "#fdfefe",
     "--color-primary": "#3498db",
     "--color-primary-dark": "#2E86C1",
     "--color-text": "#1C2833"
-  }
+  } */
 ];
 
 export const THEMES = {
   DARK_BLUE: 0,
-  DARK_GREEN: 1,
-  LIGHT_BLUE: 2
+  DARK_GREEN: 1
+  //   LIGHT_BLUE: 2
 };
 
 let currentThemeIdx = THEMES.DARK_GREEN;
