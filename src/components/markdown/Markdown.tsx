@@ -12,8 +12,8 @@ export default function Markdown(props: MarkdownProps) {
     <ReactMarkdown
       source={props.source}
       escapeHtml={false}
-      skipHtml={false}
       renderers={{ code: CodeBlock }}
+      disallowedTypes={[]}
     />
   );
 }

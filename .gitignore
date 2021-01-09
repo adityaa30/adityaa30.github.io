@@ -1,5 +1,6 @@
 .vscode
 .idea
+.eslintcache
 
 src/react-app-env.d.ts
 

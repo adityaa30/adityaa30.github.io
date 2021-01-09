@@ -28,7 +28,7 @@ export default function App() {
             render={() => <ProjectList heading={"Experience"} projects={experiences} />}
           />
           <Route exact={true} path={"/resume"} component={Resume} />
-          <Route path={"/"} component={About} />
+          <Route exact={true} path={"/"} component={About} />
         </Switch>
         <Footer />
       </div>

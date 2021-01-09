@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Chip from "../chip/Chip";
 import Markdown from "../markdown/Markdown";
 import useMarkdownUrl from "../../hooks/useMarkdown";
@@ -18,7 +18,6 @@ export interface ProjectProps {
 }
 
 export default function Project(props: ProjectProps) {
-  const [showDetails, setShowDetails] = useState(false);
   const readme = useMarkdownUrl(props.readme);
 
   return (
@@ -65,7 +64,7 @@ export default function Project(props: ProjectProps) {
           {props.duration}
         </div>
       )}
-      <Markdown source={showDetails && readme ? readme : props.details} />
+      <Markdown source={readme ? readme : props.details} />
     </div>
   );
 }
