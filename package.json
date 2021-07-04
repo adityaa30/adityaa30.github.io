@@ -1,53 +1,53 @@
 {
-  "name": "personal-website",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "http://adityaa30.github.io/",
-  "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.0.0",
-    "@testing-library/user-event": "^13.1.9",
-    "@types/jest": "^26.0.23",
-    "@types/node": "^16.0.0",
-    "@types/react": "^17.0.13",
-    "@types/react-dom": "^17.0.8",
-    "@types/react-router-dom": "^5.1.7",
-    "@types/react-syntax-highlighter": "^13.5.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-markdown": "^6.0.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "react-syntax-highlighter": "^15.4.3",
-    "typescript": "^4.3.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "lint:cli": "prettier --config='.prettierrc' --write",
-    "lint:tsx": "npm run lint:cli '**/*.tsx'",
-    "lint:ts": "npm run lint:cli 'src/**/*.ts'",
-    "lint:css": "npm run lint:cli 'src/**/*.css'",
-    "lint": "npm run lint:tsx && npm run lint:ts && npm run lint:css"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^3.2.3",
-    "prettier": "^2.3.2"
-  }
+    "name": "personal-website",
+    "version": "0.1.0",
+    "private": true,
+    "homepage": "http://adityaa30.github.io/",
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^5.15.3",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^12.0.0",
+        "@testing-library/user-event": "^13.1.9",
+        "@types/jest": "^26.0.23",
+        "@types/node": "^16.0.0",
+        "@types/react": "^17.0.13",
+        "@types/react-dom": "^17.0.8",
+        "@types/react-router-dom": "^5.1.7",
+        "@types/react-syntax-highlighter": "^13.5.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-markdown": "5.0.3",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.3",
+        "react-syntax-highlighter": "^15.4.3",
+        "typescript": "^4.3.5"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "lint:cli": "prettier --config='.prettierrc' --write",
+        "lint:tsx": "npm run lint:cli '**/*.tsx'",
+        "lint:ts": "npm run lint:cli 'src/**/*.ts'",
+        "lint:css": "npm run lint:cli 'src/**/*.css'",
+        "lint": "npm run lint:tsx && npm run lint:ts && npm run lint:css"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "gh-pages": "^3.2.3",
+        "prettier": "^2.3.2"
+    }
 }
