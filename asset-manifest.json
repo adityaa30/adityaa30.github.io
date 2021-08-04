@@ -6,12 +6,12 @@
     "runtime-main.js": "/static/js/runtime-main.d35a3416.js",
     "runtime-main.js.map": "/static/js/runtime-main.d35a3416.js.map",
     "static/css/2.d972ee17.chunk.css": "/static/css/2.d972ee17.chunk.css",
-    "static/js/2.0b2b77a8.chunk.js": "/static/js/2.0b2b77a8.chunk.js",
-    "static/js/2.0b2b77a8.chunk.js.map": "/static/js/2.0b2b77a8.chunk.js.map",
+    "static/js/2.1d6a4d8d.chunk.js": "/static/js/2.1d6a4d8d.chunk.js",
+    "static/js/2.1d6a4d8d.chunk.js.map": "/static/js/2.1d6a4d8d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.d972ee17.chunk.css.map": "/static/css/2.d972ee17.chunk.css.map",
     "static/css/main.ac026cb9.chunk.css.map": "/static/css/main.ac026cb9.chunk.css.map",
-    "static/js/2.0b2b77a8.chunk.js.LICENSE.txt": "/static/js/2.0b2b77a8.chunk.js.LICENSE.txt",
+    "static/js/2.1d6a4d8d.chunk.js.LICENSE.txt": "/static/js/2.1d6a4d8d.chunk.js.LICENSE.txt",
     "static/media/Resume.70c9b353.pdf": "/static/media/Resume.70c9b353.pdf",
     "static/media/all.css": "/static/media/fa-solid-900.efbd5d20.eot",
     "static/media/profile.089b65e8.png": "/static/media/profile.089b65e8.png"
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.d35a3416.js",
     "static/css/2.d972ee17.chunk.css",
-    "static/js/2.0b2b77a8.chunk.js",
+    "static/js/2.1d6a4d8d.chunk.js",
     "static/css/main.ac026cb9.chunk.css",
     "static/js/main.1f129176.chunk.js"
   ]
